@@ -13,7 +13,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, toggleDarkMode }) => {
           <div className="flex justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/wuslaweb" className="text-2xl font-bold text-teal-600 dark:text-teal-400 hover:text-teal-700 transition-colors">
+              <Link to="/" className="text-2xl font-bold text-teal-600 dark:text-teal-400 hover:text-teal-700 transition-colors">
                 Wusla
               </Link>
             </div>
@@ -69,7 +69,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, toggleDarkMode }) => {
       {/* Routes for different pages */}
       <Routes>
         <Route path="/terms" element={<TermsAndPrivacy />} />
-        <Route path='/wuslaweb' element={<Home />} />
+        <Route path='/' element={<Home />} />
         {/* Other routes can be added here */}
       </Routes>
     </Router>
