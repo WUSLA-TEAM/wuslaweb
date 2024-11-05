@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, } from 'lucide-react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import TermsAndPrivacy from './components/TermsAndPrivacy';
 import Home from './components/Home';
 
