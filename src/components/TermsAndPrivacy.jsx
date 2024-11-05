@@ -47,10 +47,10 @@ const TermsAndPrivacy = () => {
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-900 sm:text-6xl">
-              Terms and Privacy Policy
+              Wusla Terms and Conditions
             </h1>
             <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
-              Last updated: November 4, 2024
+              Last updated: November 5, 2024
             </p>
           </div>
         </div>
@@ -60,52 +60,106 @@ const TermsAndPrivacy = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <div className="bg-white shadow rounded-lg p-8">
           <div className="space-y-8">
-            {/* Terms of Service */}
+            {/* Acceptance of Terms */}
             <motion.div whileHover={{ scale: 1.02 }}>
-              <SectionHeader title="1. Terms of Service" id="terms" />
-              {activeSection === 'terms' && (
+              <SectionHeader title="1. Acceptance of Terms" id="acceptance" />
+              {activeSection === 'acceptance' && (
                 <SectionContent>
-                  {/* Content here */}
+                  By accessing or using Wusla's products, services, or website, you agree to be bound by these Terms and Conditions. 
+                  Wusla reserves the right to update or change these Terms at any time without prior notice. Continued use of the service constitutes acceptance of any updates or modifications.
                 </SectionContent>
               )}
             </motion.div>
 
-            {/* Privacy Policy */}
+            {/* Description of Services */}
             <motion.div whileHover={{ scale: 1.02 }}>
-              <SectionHeader title="2. Privacy Policy" id="privacy" />
+              <SectionHeader title="2. Description of Services" id="description" />
+              {activeSection === 'description' && (
+                <SectionContent>
+                  Wusla provides a range of technology services, including software development, UX design, and customer support. These services are 
+                  designed to be accessible online through our website and Wusla Stores. Any additional services will be governed by specific terms relevant to that service.
+                </SectionContent>
+              )}
+            </motion.div>
+
+            {/* User Responsibilities */}
+            <motion.div whileHover={{ scale: 1.02 }}>
+              <SectionHeader title="3. User Responsibilities" id="responsibilities" />
+              {activeSection === 'responsibilities' && (
+                <SectionContent>
+                  Users agree to provide accurate information when creating an account, comply with all applicable laws, and use our Services in a manner 
+                  that does not infringe or violate the rights of others. Users are responsible for securing their account credentials and notifying Wusla 
+                  of any unauthorized access.
+                </SectionContent>
+              )}
+            </motion.div>
+
+            {/* Payment Terms */}
+            <motion.div whileHover={{ scale: 1.02 }}>
+              <SectionHeader title="4. Payment Terms" id="payment" />
+              {activeSection === 'payment' && (
+                <SectionContent>
+                  Payments for Wusla services are processed through Razorpay. Users agree to abide by Razorpay’s terms and policies for secure transactions. 
+                  Payments must be completed before access to paid services is granted. Refunds and cancellations are subject to specific terms, if applicable, 
+                  as detailed during the purchasing process.
+                </SectionContent>
+              )}
+            </motion.div>
+
+            {/* Data Privacy */}
+            <motion.div whileHover={{ scale: 1.02 }}>
+              <SectionHeader title="5. Data Privacy" id="privacy" />
               {activeSection === 'privacy' && (
                 <SectionContent>
-                  {/* Content here */}
+                  Wusla is committed to protecting user privacy. All personal data collected, including but not limited to name, contact information, 
+                  and usage data, is stored securely and used only for enhancing the user experience or providing support. Users may refer to our Privacy Policy 
+                  for further details on data protection practices.
                 </SectionContent>
               )}
             </motion.div>
 
-            {/* Data Storage and Security */}
+            {/* Limitation of Liability */}
             <motion.div whileHover={{ scale: 1.02 }}>
-              <SectionHeader title="3. Data Storage and Security" id="security" />
-              {activeSection === 'security' && (
+              <SectionHeader title="6. Limitation of Liability" id="liability" />
+              {activeSection === 'liability' && (
                 <SectionContent>
-                  {/* Content here */}
+                  Wusla will not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use our services. 
+                  This limitation applies to all claims, including but not limited to loss of profits, data, or business. Users assume full responsibility for 
+                  any use of third-party services or products linked through Wusla's platform.
                 </SectionContent>
               )}
             </motion.div>
 
-            {/* User Rights */}
+            {/* Intellectual Property */}
             <motion.div whileHover={{ scale: 1.02 }}>
-              <SectionHeader title="4. User Rights" id="rights" />
-              {activeSection === 'rights' && (
+              <SectionHeader title="7. Intellectual Property" id="intellectual-property" />
+              {activeSection === 'intellectual-property' && (
                 <SectionContent>
-                  {/* Content here */}
+                  All content on the Wusla website, including text, images, software, and logos, is the intellectual property of Wusla or its licensors. 
+                  Unauthorized use, reproduction, or distribution of any Wusla content is strictly prohibited.
                 </SectionContent>
               )}
             </motion.div>
 
-            {/* Contact Information */}
+            {/* Termination */}
             <motion.div whileHover={{ scale: 1.02 }}>
-              <SectionHeader title="5. Contact Information" id="contact" />
-              {activeSection === 'contact' && (
+              <SectionHeader title="8. Termination" id="termination" />
+              {activeSection === 'termination' && (
                 <SectionContent>
-                  {/* Content here */}
+                  Wusla reserves the right to suspend or terminate user accounts at its discretion, including but not limited to cases of policy violation, 
+                  illegal activity, or any behavior that could harm the company or its users. In cases of termination, users may lose access to paid services 
+                  without entitlement to a refund.
+                </SectionContent>
+              )}
+            </motion.div>
+
+            {/* Governing Law */}
+            <motion.div whileHover={{ scale: 1.02 }}>
+              <SectionHeader title="9. Governing Law" id="governing-law" />
+              {activeSection === 'governing-law' && (
+                <SectionContent>
+                  These Terms and Conditions shall be governed by the laws of [insert relevant jurisdiction]. Any disputes arising from these Terms shall 
+                  be resolved in the appropriate courts of [insert location], without regard to conflicts of law principles.
                 </SectionContent>
               )}
             </motion.div>
@@ -119,7 +173,7 @@ const TermsAndPrivacy = () => {
             transition={{ duration: 0.4 }}
           >
             <p className="text-sm text-gray-500">
-              These terms and conditions were last updated on November 4, 2024.
+              These terms and conditions were last updated on November 5, 2024.
             </p>
           </motion.div>
         </div>
@@ -139,16 +193,8 @@ const TermsAndPrivacy = () => {
                 Have questions about our terms?
               </p>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-teal-100">
-                Our legal team is here to help you understand our policies.
+                Our legal team is here to help you understand any details. Please contact us at support@wusla.com for further assistance.
               </p>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <motion.button
-                className="bg-white text-teal-600 px-6 py-3 rounded-md font-medium hover:bg-teal-50 transition duration-300"
-                whileHover={{ scale: 1.1 }}
-              >
-                Contact Legal Team
-              </motion.button>
             </div>
           </div>
         </div>
