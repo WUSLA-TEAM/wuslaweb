@@ -1,22 +1,17 @@
 import React from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ toggleDarkMode, darkMode }) => {
+function Navbar() {
   return (
-    <nav className="fixed w-full bg-white dark:bg-gray-900 shadow-md z-50 p-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold text-teal-600 dark:text-teal-400">Wusla</Link>
-      
-      {/* Dark Mode Toggle Button */}
-      <button
-        onClick={toggleDarkMode}
-        className="p-2 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full transition-all hover:scale-125"
-        title="Toggle Dark Mode"
-      >
-        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-      </button>
+    <nav className="flex items-center justify-between px-6 py-4">
+      <div className="text-2xl font-semibold tracking-wider">Wusla</div>
+      <Link to="/terms">
+        <button className="px-4 py-2 transition transform bg-teal-600 hover:bg-teal-500 rounded-full text-sm font-medium">
+          Terms & Conditions
+        </button>
+      </Link>
     </nav>
   );
-};
+}
 
 export default Navbar;
